@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+	  <link rel="stylesheet" type="text/css" href="slider.css" />
+    <link rel="stylesheet" href="new.css">
+    <title>SHOP</title>
+</head>
+<body class="bg-black text-white">
+    <div class="nav flex  text-xs space-x-6 mx-8 my-10 cursor-pointer md:text-sm lg:text-base md:space-x-11 lg:space-x-14 md:mx-28">
+        <div class="item hover:text-green-500 hover:shadow-sm hover:shadow-[#0f7a25] "><a href="day1.html">HOME</a></div>  
+            <div class="item hover:text-green-500 hover:shadow-sm hover:shadow-[#0f7a25] "><a href="bio.html">ABOUT</a></div> 
+            <div class="item hover:text-green-500 hover:shadow-sm hover:shadow-[#0f7a25] "><a href="blog.html">BLOG</a></div> 
+            <div class="item hover:text-green-500 hover:shadow-sm hover:shadow-[#0f7a25] "><a href="project.html">PROJECTS</a></div> 
+            <div class="item hover:text-green-500 hover:shadow-sm hover:shadow-[#0f7a25] "><a href="contact.html">CONTACT</a></div>      
+    </div>
+
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        <span><i class="fas fa-shopping-cart fa-3x cursor-pointer"></i></span>
+        <span class="text-4xl">&nbsp;CART <br><br><br></span>
+        <span class="text-3xl">This is a prototype page. <br> Complete features of this website would be available in some days.</span>
+      </div>
+    </div>
+
+<header class="tracking-wide">
+    <nav class="flex justify-around  mt-4">
+      <div class="text-xl "> 
+        <a href="#" class="ml-5 lg-[ml-0] mr-4 hover:text-green-800"><i class="fas fa-bars"></i></a>
+        <a href="#" class="hover:text-green-800"><i class="fas fa-search"></i></a>
+      </div> 
+      <h1 class="text-2xl font-bold text-center ">ShopVerse</h1>
+      <div class="text-xl "> 
+        <a href="welcome.php" class="hover:text-green-800"><i class="fas fa-user"></i></a>
+        <span  onclick="openNav()"><i class="fas fa-shopping-cart mr-16 ml-4 cursor-pointer hover:text-green-800"></i></span>
+      </div> <!--end of left nav-->
+    </nav>
+    </header>
+  
+    <br>
+<section> 
+  <div class="rt-container">
+    <div class="col-rt-12">
+<!-- Slider -->
+        <div id="slider">
+          <div class="slides">
+            <div class="slider">
+              <div class="legend"></div>
+              <div class="content">
+                <div class="content-txt">
+                  <h2>40-60% OFF</h2>
+                  <p>A premium collection of footwear is going to dropped here. <br>Sale is going live on 15 MAY 2022 <br> SHOP NOW!</p>
+                </div>
+              </div>
+              <div class="image"> <img src="images/sl1.jpg" class="lg:px-80"></div>
+            </div>
+            <div class="slider">
+              <div class="legend"></div>
+              <div class="content">
+                <div class="content-txt">
+                  <h2>NEW ARRIVALS</h2>
+                  <p>For the first time a classic range of  sunglasses is coming from our franchise. <br>Going to drop on 20 MAY 2022.</p>
+                </div>
+              </div>
+              <div class="image"> <img src="images/sl2.jpg" class="lg:px-80"> </div>
+            </div>
+            <div class="slider">
+              <div class="legend"></div>
+              <div class="content">
+                <div class="content-txt">
+                  <h2>retour à la maison</h2>
+                  <p>A mesmerising range of Hoddies is coming this festival season. <br>So, enjoy your festivals with our hoodies collection.</p>
+                </div>
+              </div>
+              <div class="image"> <img src="images/sl3.png" class="lg:px-80"> </div>
+            </div>
+            <div class="slider">
+              <div class="legend"></div>
+              <div class="content">
+                <div class="content-txt">
+                  <h2>Premium Watches</h2>
+                  <p>A variety of premium watches especially for womens this festive season. <br>This festival bring lights to your life with our watches.</p>
+                </div>
+              </div>
+              <div class="image"> <img src="images/sl4.jpg" class="lg:px-80"> </div>
+            </div>
+          </div>
+          <div class="switch">
+            <ul>
+              <li>
+                <div class="on"></div>
+              </li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+        </div>
+       </div> 
+ </div>          
+</section>
+
+
+
+  <body class="tracking-wide">
+  
+  
+    <div class="flex md:justify-center mt-4 ml-3 text-[9px] lg:text-[16px] md:text-[12px] pt-5 ">
+      <a href="#" class="mx-3 hover:text-green-700">Shop All</a>
+      <a href="#" class="hover:text-green-700">Casual Wear</a>
+      <a href="#" class="mx-3 hover:text-green-700">Formal Wear</a>
+      <a href="#" class="hover:text-green-700">Gromming Products</a>
+      <a href="#" class="mx-3 hover:text-green-700">Footwear</a>
+      </div>
+    
+      <div class="line bg-white h-[1px] mt-2 mx-10"></div>
+  <div class="mt-12 flex justify-between mb-8">
+      <h2 class="text-2xl mx-16 font-semibold">Shop All</h2>
+      <div class="mx-16">
+        <span class="mr-4">6 items</span>
+        <select id="dropdown" class="py-6 bg-black">
+          <option disabled selected value class=" p-4">Sort by</option>
+          <option>Product Type</option>
+          <option>Bestsellers</option>
+          <option>Lowest Price</option>
+          <option>Highest Price</option>
+          <option>Bestsellers</option>
+        </select>
+      </div>
+    </div>
+    
+    <div class="grid lg:grid-cols-4 sm:grid-cols-1 md:grid-cols-2 mx-16 gap-8">
+      <div class=" card flex flex-col bg-black" id="item1">
+        <img src="images/s1.jpg" class="transition ease-in-out delay-150 hover:-translate-y-2 hover:scale-125 hover:rounded-md duration-300" alt="Boy Brow ">
+        <div class="title hover:text-green-800 hover:underline flex flex-col mx-2 mt-4 mb-3">
+          <a href="#" class="text-lg font-medium">Black Shirt</a>
+          <a href="#" class="font-light default:text-gray-900">Casual Shirts</a>
+        </div>
+        <div class="mx-2 mb-3">
+          <label>SIZE:</label>
+          <select class="bg-black">
+            <option>S</option>
+            <option>M</option>
+            <option>L</option>
+            <option>XL</option>
+            <option>XXL</option>
+          </select>
+        </div>
+        <button onclick="added();" id="item1" class="mx-2 mb-3 max-w-max border rounded hover:border-gray-600 flex justify-between p-2">
+          <span class="mx-4 text-sm">Add to Cart</span>
+          <span class="mx-4 text-sm">₹699</span>
+        </button>
+      </div>
+      
+      <div class="flex flex-col card" id="item2">
+        <img src="images/s2.jpg" class="transition ease-in-out delay-150 hover:-translate-y-2 hover:scale-125 hover:rounded-md duration-300" alt="Cloud Paint">
+        <div class="title hover:text-green-800 hover:underline flex flex-col mx-2 mt-4 mb-3">
+          <a href="#" class="text-lg font-medium">Black trousers</a>
+          <a href="#" class="font-light default:text-gray-900">Casual Wear</a>
+        </div>
+        <div class="mx-2 mb-3">
+          <label>SIZE:</label>
+          <select class="bg-black">
+            <option>S</option>
+            <option>M</option>
+            <option>L</option>
+            <option>XL</option>
+            <option>XXL</option>
+          </select>
+        </div>
+        <button onclick="added();" id="item2" class="mx-2 mb-3 max-w-max border rounded hover:border-gray-600 flex justify-between p-2">
+          <span class="mx-4 text-sm">Add to Cart</span>
+          <span class="mx-4 text-sm">₹999</span>
+        </button>
+      </div>
+      
+      <div class="flex flex-col card " id="item3">
+        <img src="images/s3.jpg" class="transition ease-in-out delay-150 hover:-translate-y-2 hover:scale-125 hover:rounded-md duration-300" alt="Generation G">
+        <div class="title hover:text-green-800 hover:underline flex flex-col mx-2 mt-4 mb-3">
+          <a href="#" class="text-lg font-medium">Marvel Cap Tshirt</a>
+          <a href="#" class="font-light default:text-gray-900">Rounded Neck Tshirt</a>
+        </div>
+        <div class="mx-2 mb-3">
+          <label>SIZE:</label>
+          <select class="bg-black">
+            <option>S</option>
+            <option>M</option>
+            <option>L</option>
+            <option>XL</option>
+            <option>XXL</option>
+          </select>
+        </div>
+        <button onclick="added();" id="item3" class="mx-2 mb-3 text-sm max-w-max border rounded hover:border-gray-600 flex justify-between p-2">Add to Cart - ₹899
+        </button>
+      </div>
+      
+      <div class="flex flex-col card" id="item4">
+        <img src="images/s4.jpg" class="transition ease-in-out delay-150 hover:-translate-y-2 hover:scale-125 hover:rounded-md duration-300" alt="Lip Gloss">
+        <div class="title hover:text-green-800 hover:underline flex flex-col mx-2 mt-4 mb-3">
+          <a href="#" class="text-lg font-medium">Grey Sneakers</a>
+          <a href="#" class="font-light default:text-gray-900">Casual and Sneakers Wear</a>
+        </div>
+        <div class="mx-2 mb-3">
+          <label>SIZE:</label>
+          <select class="bg-black">
+            <option>S</option>
+            <option>M</option>
+            <option>L</option>
+            <option>XL</option>
+            <option>XXL</option>
+          </select>
+        </div>
+        <button onclick="added();" id="item4" class="mx-2 mb-3 max-w-max  border rounded hover:border-gray-600 flex justify-between p-2">
+          <span class="mx-4 text-sm">Add to Cart</span>
+          <span class="mx-4 text-sm">₹1999</span>
+        </button>
+      </div>
+      
+      <div class="flex flex-col card" id="item5">
+        <img src="images/s5.jpg" class="transition ease-in-out delay-150 hover:-translate-y-2 hover:scale-125 hover:rounded-md duration-300" alt="Brow Flick">
+        <div class="title hover:text-green-800 hover:underline flex flex-col mx-2 mt-4 mb-3">
+          <a href="#" class="text-lg font-medium">Watch SV1</a>
+          <a href="#" class="font-light default:text-gray-900">Chronograph Watches </a>
+        </div>
+        <div class="mx-2 mb-3">
+          <label>SIZE:</label>
+          <select class="bg-black">
+            <option>S</option>
+            <option>M</option>
+            <option>L</option>
+            <option>XL</option>
+            <option>XXL</option>
+          </select>
+        </div>
+        <button onclick="added();" id="item5" class="mx-2 mb-3 max-w-max border rounded hover:border-gray-600 flex justify-between p-2">
+          <span class="mx-4 text-sm">Add to Cart</span>
+          <span class="mx-4 text-sm">₹1599</span>
+        </button>
+      </div>
+      
+      <div class="flex flex-col card" id="item6">
+        <img src="images/s6.jpg" class="transition ease-in-out delay-150 hover:-translate-y-2 hover:scale-125 hover:rounded-md duration-300" alt="Lash Slick">
+        <div class="title hover:text-green-800 hover:underline flex flex-col mx-2 mt-4 mb-3">
+          <a href="#" class="text-lg font-medium">Quoted Hoddie</a>
+          <a href="#" class="font-light default:text-gray-900">Winter Special collection</a>
+        </div>
+        <div class="mx-2 mb-3">
+          <label>SIZE:</label>
+          <select class="bg-black">
+            <option>S</option>
+            <option>M</option>
+            <option>L</option>
+            <option>XL</option>
+            <option>XXL</option>
+          </select>
+        </div>
+        <button onclick="added();" id="item6" class="mx-2 mb-3 max-w-max  border rounded hover:border-gray-600 flex justify-between p-2">
+          <span class="mx-4 text-sm">Add to Cart</span>
+          <span class="mx-4 text-sm">₹1399</span>
+        </button>
+      </div>
+    </div>
+
+  </body>
+
+<div class="flex justify-center pt-10">
+  <button class="load border-2 border-white rounded-md p-2 hover:-translate-y-1" onclick="func();">
+    Load More Products
+  </button>
+</div>
+
+
+  
+  <footer class="bg-black mt-16 pb-24 pt-12 tracking-wide">
+    <div class="inline-flex bg-black ml-16 mb-20">
+      <img src="images/store.jpg" class="rounded-r-full" alt="store image">
+      <div class="flex flex-col ml-8 self-center">
+        <span class="text-white text-2xl">More about our stores</span>
+          <div class="space-x-4 text-sm  text-white no-underline">
+            <a href="#" class="transition duration-500 hover:text-gray-600">Lucknow</a>
+            <a href="#" class="transition duration-500 hover:text-gray-600">Delhi</a>
+            <a href="#" class="transition duration-500 hover:text-gray-600">All stores & popups</a>
+          </div>
+      </div>
+    </div>
+    <div class="flex justify-center ml-[90px]">
+      <div class="max-w-xl">
+        
+        
+      <div class="uppercase flex flex-row space-x-24">
+        <div class="flex flex-col text-xs space-y-4">
+          <span class="text-gray-600">About</span>
+          <a href="bio.html" class="transition duration-500 text-white hover:text-gray-600 hover:underline">About Owner</a>
+          <a href="#" class="transition duration-500 text-white hover:text-gray-600 hover:underline">Careers</a>
+          <a href="blog.html" class="transition duration-500 text-white hover:text-gray-600 hover:underline">Company blog</a>
+        </div>
+        <div class="flex flex-col text-xs space-y-4">
+          <span class="text-gray-600">Help</span>
+          <a href="contact.html" class="transition duration-500 text-white hover:text-gray-600 hover:underline">Contact</a>
+          <a href="#" class="transition duration-500 text-white hover:text-gray-600 hover:underline">Redeem gift card</a>
+          <a href="#" class="transition duration-500 text-white hover:text-gray-600 hover:underline">Returns & exchanges</a>
+          <a href="#" class="transition duration-500 text-white hover:text-gray-600 hover:underline">Help & FAQ</a>
+        </div>
+        <div class="flex flex-col text-xs space-y-4">
+          <span class="text-gray-600">More</span>
+          <a href="#" class="transition duration-500 text-white hover:text-gray-600 hover:underline">Into the gloss</a>
+          <a href="#" class="transition duration-500 text-white hover:text-gray-600 hover:underline">Free stuff</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+<script>
+  function func() {  
+    alert ("Products will be available soon");  
+ }  
+ function added(){
+   alert("Added to cart");
+ }
+ function openNav() {
+  document.getElementById("myNav").style.height = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.height = "0%";
+}
+ 
+ 
+</script>
+</body>
+</html>

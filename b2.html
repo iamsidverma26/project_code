@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Blogs</title>
+</head>
+<body class="bg-black">
+    <div class="nav flex text-slate-200 text-xs space-x-2 mx-8 my-10 cursor-pointer md:text-sm lg:text-base md:space-x-11 lg:space-x-14 md:mx-28">
+        <div class="item hover:text-green-500 hover:shadow-sm hover:shadow-[#0f7a25] "><a href="day1.html">HOME</a></div>  
+            <div class="item hover:text-green-500 hover:shadow-sm hover:shadow-[#0f7a25] "><a href="bio.html">ABOUT</a></div> 
+            <div class="item hover:text-green-500 hover:shadow-sm hover:shadow-[#0f7a25] "><a href="blog.html">BLOG</a></div> 
+            <div class="item hover:text-green-500 hover:shadow-sm hover:shadow-[#0f7a25] "><a href="project.html">PROJECTS</a></div> 
+            <div class="item hover:text-green-500 hover:shadow-sm hover:shadow-[#0f7a25] "><a href="contact.html">CONTACT</a></div>      
+    </div>
+
+    <div class=" text-white border-2 border-green-400 mx-8 mb-10 p-2 overflow-hidden mt-20 shadow-lg shadow-[#0f7a25]">
+        <img src="images/nft.jpg" alt="" class="p-2 rounded-xl  w-[400px] md:ml-[150px] lg:ml-[500px] hover:animate-pulse  "><br>
+        <div class="inline-block">
+        <span class="text-2xl text-center underline"><i>NFT - THE HYPE</i><br><br></span>
+        <span class="text-2xl text-center">HOW NFTS WORK</span>
+        NFT tokens are cryptographic assets on blockchain with unique identification codes and metadata that distinguish them from each other, so in order to understand how they work, one must understand blockchain. Blockchain as a technology here provides the possibility to store data in a secure and anonymous way. From a high-level technical perspective that is a database where for all data changes generates a unique transaction which in turn is organized as a chain. Using sophisticated cryptography and a decentralized network, the blockchain can ensure that it is safe from counterfeiting and that each coin belongs to the correct person. NFTs exist on blockchain networks such as Ethereum, and provide a certificate of authenticity as well as legal rights to the digital asset. <br>
+        In general, that is a new generation of ICOs and cryptocurrency tokens which use standard ERC-20 and they are fungible.  Unlike them, NFT tokens have ERC-721 standards (developed by some of the same people responsible for the ERC-20 smart contract) and they cannot be traded or exchanged at equivalency, so they are non-fungible and immutable. Also, NFT could be based on ERC-1155 standard which allows to issue multiple tokens in one contract, tokens in one contract can be fungible and non-fungible at the same time. <br><br>
+        From a non-technical perspective, NFTs extend the concept of a cryptocurrency by encoding information about a digital asset along with the other information. Now, rather than a bunch of otherwise identical coins, there are countless unique items on the blockchain that can be sold. Anyone who purchases an NFT will be the only one who can own that particular chunk of the blockchain. If it seems weird to purchase something digital that can be copied, think of NFTs as a digital certificate of authenticity. Other people may have copies, but only the purchaser has the original, insofar as digital content can be original. <br><br>
+         <span class="text-2xl text-center">HOW SECURE ARE NFTS?</span>
+         Imagine someone has purchased an NFT that later turns out to have been based on stolen artwork. The market that sold the NFT is going to have to take it down, as they don’t have the rights to host the art. This means that the person who purchased the artwork will no longer be able to see it. Granted, it’s digital, so the buyer could have just downloaded it after they purchased and be able to view it anytime they want from the comfort of their computer. But what if they then want to sell it? They are largely out of luck. <br>                  
+         There are two ways the artwork could be stored on the blockchain. The art itself could be put in there, if it’s small enough in size. Alternatively, a link to the artwork could be put into the blockchain. If you’ve ever went to a website and encountered the 404 file not found error, you can probably immediately see the problem with the latter example. When you buy a collectible, the general idea is to sell it at some point down the road when its value has increased. Some people may be content just looking at their collectible. With physical collectibles, this is rather easy. You keep them in a secure location, and they’ll always be there. With NFT, you need to worry that one day the URL will simply stop working. This requires a significant amount of trust in the person you are purchasing from. <br><br>
+         Thankfully, there are ways to protect your investment. <br>
+        And of course, keep a general checklist to protect yourself from attacks based on general cyber security threats: <br>
+
+        ●Choose a secure wallet<br>
+        ●Use a complex password<br>
+        ●Enable two-factor authentication<br>
+        ●Keep your recovery phrase in a secure place<br>
+        ●Back up your wallet regularly<br>
+        ●Update your software regularly<br>
+        ●Use a secure internet connection <br><br>
+        <span>Posted on 20/04/2022</span>
+        <button class="btn1">
+            <span id="icon1"><i class="far fa-thumbs-up ml-5"></i></span>
+            <span id="count1">0</span>
+        </button>
+        <br><br>
+        <div class="writer">
+            -By Ashish Kumar <br>
+            Technology and Cryptocurrency Enthusiast <br>
+            CSE Ⅱ YEAR  
+        </div>
+
+        </div>
+        
+    </div>
+
+    <footer class="text-white text-xs text-center mt-10 mb-5 ">
+        &copy; 2022 COPYRIGHT ALL RIGHTS RESERVED
+    </footer>
+
+    <script>
+        const likebtn1 = document.querySelector(".btn1");
+        let likeicon1 = document.querySelector("#icon1")
+        let count1 = document.querySelector("#count1");
+
+        let clicked1 = false;
+        likebtn1.addEventListener("click", () => {
+            if(!clicked1){
+                clicked1 = true;
+                likeicon1.innerHTML = `<i class="far fa-thumbs-up ml-5"></i>`;
+                count1.textContent++;
+            }
+            else{
+                clicked1 = false;
+                likeicon1.innerHTML = `<i class="far fa-thumbs-up ml-5"></i>`;
+                count1.textContent--;
+            }
+        })
+    </script>
+</body>
+</html>

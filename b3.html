@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Blogs</title>
+</head>
+<body class="bg-black">
+    <div class="nav flex text-slate-200 text-xs space-x-2 mx-8 my-10 cursor-pointer md:text-sm lg:text-base md:space-x-11 lg:space-x-14 md:mx-28">
+        <div class="item hover:text-green-500 hover:shadow-sm hover:shadow-[#0f7a25] "><a href="day1.html">HOME</a></div>  
+            <div class="item hover:text-green-500 hover:shadow-sm hover:shadow-[#0f7a25] "><a href="bio.html">ABOUT</a></div> 
+            <div class="item hover:text-green-500 hover:shadow-sm hover:shadow-[#0f7a25] "><a href="blog.html">BLOG</a></div> 
+            <div class="item hover:text-green-500 hover:shadow-sm hover:shadow-[#0f7a25] "><a href="project.html">PROJECTS</a></div> 
+            <div class="item hover:text-green-500 hover:shadow-sm hover:shadow-[#0f7a25] "><a href="contact.html">CONTACT</a></div>      
+    </div>
+
+    <div class=" text-white border-2 border-green-400 mx-8 mb-10 p-2 overflow-hidden mt-20 shadow-lg shadow-[#0f7a25]">
+        <img src="images/music.jpg" alt="" class="p-2 rounded-xl  w-[400px] md:ml-[150px] lg:ml-[500px] hover:animate-pulse  "><br>
+        <div class="inline-block">
+        <span class="text-2xl text-center underline"><i>MUSIC - THE THERAPY</i><br><br></span>
+        <span class="text-2xl text-center">Music has the Power to Heal</span><br><br>
+        Music is a form of a melody that soothes into our body and helping us to feel refreshed and relaxed. It helps us to get rid of the anxiety and stress of our everyday life. Music is undoubtedly a great way of healing the pain. It makes us forget about unpleasant and disturbing thoughts by taking us in the world of melody. <br> Music can bring the back old memories in our present time. Music therapy restores us from several problems and emotions in our daily life. When we attend music therapy it helps our brain functioning quicker and helps us keep calm. <br><br>
+        <span class="text-2xl text-center">The Medicinal Effect of Music</span><br><br>
+        Whatever problems we may have, that will flow out of our brain. Even it also helps the doctor and psychologist to identify the state of our brain and behaviors. Well, according to researchers and practitioners of music therapy is a big tool for all of us. <br><br>
+        Indeed, music can heal people in many difficult situations. Music can make a big difference to people with brain injuries and it can activate the brain in alternative ways. It helps often bypassing the damaged areas, allowing people to regain movement as well as speech.Therefore, music actually changes the structure of the brain, giving people new chances to move and speak. Also, various studies have shown that music therapy can regularize the heart and breathing rates. Even it can help cancer patients. In the field of psychology, music is very useful to help people suffering from depression and sadness. Also, children with developmental disabilities may get support from music in many ways. <br><br>
+        Music is one of the most important boons of God for all living beings. Music is the subject that classifies all the rhythmic sounds into a system and anyone may learn and practice it. Not only that but also the plants, animals can enjoy the harmony, pleasant rhythm of the musical sounds. <br>
+        The style of music has changed dramatically throughout the various ages of the time period. Mainly there are six eras in music history. These are the Middle Ages, Renaissance, Baroque, Classical, Romantic, and Twentieth Century. Music has been and always will be a popular form of entertainment for many of us.The dictionary defines the music as an art of sound in time which expresses ideas and emotions both significantly through the elements of rhythm, melody, and harmony. <br><br>
+        <span>Posted on 21/04/2022</span>
+        <button class="btn2">
+            <span id="icon2"><i class="far fa-thumbs-up ml-5"></i></span>
+            <span id="count2">0</span>
+        </button>
+        <br><br>
+        <div class="writer">
+            -By Piyush Kumar <br>
+            Musician and Lyricist [Artist] <br>
+            CSE Ⅱ YEAR  
+        </div>
+
+        </div>
+        
+    </div>
+
+    <footer class="text-white text-xs text-center mt-10 mb-5 ">
+        &copy; 2022 COPYRIGHT ALL RIGHTS RESERVED
+    </footer>
+
+
+    <script>
+        const likebtn2 = document.querySelector(".btn2");
+        let likeicon2 = document.querySelector("#icon2")
+        let count2 = document.querySelector("#count2");
+
+        let clicked2 = false;
+        likebtn2.addEventListener("click", () => {
+            if(!clicked2){
+                clicked2 = true;
+                likeicon2.innerHTML = `<i class="far fa-thumbs-up ml-5"></i>`;
+                count2.textContent++;
+            }
+            else{
+                clicked2 = false;
+                likeicon2.innerHTML = `<i class="far fa-thumbs-up ml-5"></i>`;
+                count2.textContent--;
+            }
+        })
+    </script>
+</body>
+</html>

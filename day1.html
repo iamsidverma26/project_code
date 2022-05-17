@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>SIDDHARTH VERMA</title>
+    <style>
+        .bg{
+            background-image: url('images/night.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: auto;
+            height: 100vh;
+       }
+    .content{
+        position: relative;
+        font-family: 'Lobster', cursive;
+    }
+    .content h2{
+        color: #fff;
+        position: absolute;
+        letter-spacing: 5px;
+        transform: translate(-50%, -50%);
+    }
+    .content h2:nth-child(1){
+        color:transparent;
+        -webkit-text-stroke: 3px rgb(214, 225, 216);
+    }
+    .content h2:nth-child(2){
+        color:rgb(0, 0, 0);
+        animation: never 3s ease-in-out infinite;
+    }
+    
+    @keyframes never{
+        0%, 100%{
+            clip-path: polygon(
+                0% 45%,
+                16% 44%,
+                33% 50%,
+                54% 60%,
+                70% 61%,
+                84% 59%,
+                100% 52%,
+                100% 100%,
+                0% 100%
+            );
+        }
+
+        50%{
+         clip-path: polygon(
+             0% 60%,
+             15% 65%,
+             34% 66%,
+             51% 62%,
+             67% 50%,
+             84% 45%,
+             100% 46%,
+             100% 100%,
+             0% 100%
+         );
+     }
+    }
+
+    </style>
+</head>
+<body class="bg-[#070808] ">
+    <div class="whole ">
+        <div class="nav absolute flex text-slate-200 space-x-3 mx-7 my-10 cursor-pointer md:space-x-11 lg:space-x-14 md:mx-28">
+            <div class="item hover:text-green-500 hover:shadow-sm hover:shadow-[#0f7a25] "><a href="day1.html">HOME</a></div>  
+            <div class="item hover:text-green-500 hover:shadow-sm hover:shadow-[#0f7a25] "><a href="bio.html">ABOUT</a></div> 
+            <div class="item hover:text-green-500 hover:shadow-sm hover:shadow-[#0f7a25] "><a href="blog.html">BLOG</a></div> 
+            <div class="item hover:text-green-500 hover:shadow-sm hover:shadow-[#0f7a25] "><a href="project.html">PROJECTS</a></div> 
+            <div class="item hover:text-green-500 hover:shadow-sm hover:shadow-[#0f7a25] "><a href="contact.html">CONTACT</a></div>    
+        </div>
+
+
+        <div class="content">
+        <h2 class="mx-48 my-72 text-6xl cursor-pointer md:mx-80 md:text-7xl lg:mx-[400px] lg:text-9xl ">Siddharth</h2>
+        <h2 class="mx-48 my-72 text-6xl cursor-pointer md:mx-80 md:text-7xl lg:mx-[400px] lg:text-9xl">Siddharth</h2>
+        </div>
+        <div class="content"> 
+            <h2 class="mx-48 my-96 text-6xl cursor-pointer md:mx-80 md:text-7xl lg:mx-[400px] lg:text-9xl">Verma</h2>
+            <h2 class="mx-48 my-96 text-6xl cursor-pointer md:mx-80 md:text-7xl lg:mx-[400px] lg:text-9xl">Verma</h2>
+        </div>
+        
+        <div class="social absolute text-white mx-7 text-center mt-[480px]  ">
+            <ul class="flex space-x-8 ml-5 md:ml-20 md:space-x-20  ">
+                <li><a href="https://www.facebook.com/profile.php?id=100012287290526"><i class="fa-brands fa-facebook fa-2x  hover:active:animate-spin  "></i></a></li>
+                <li><a href="https://www.instagram.com/iam_sid.26/"><i class="fa-brands fa-instagram fa-2x  hover:active:animate-spin  "></i></a></li>
+                <li><a href="https://www.linkedin.com/in/siddharth-verma-1197a61a5/"><i class="fa-brands fa-linkedin fa-2x hover:active:animate-spin  "></i></a></li>
+                <li><a href="https://github.com/iamsidverma26"><i class="fa-brands fa-github fa-2x hover:active:animate-spin  "></i></a></li>
+                <li><a href="register.php"><i class="fa-solid fa-cart-arrow-down fa-2x hover:active:animate-spin  "></i></a></li>
+            </ul>
+        </div>
+        
+        
+        <div class="bg">
+    
+        </div>
+        
+    </div>
+</body>
+</html>
